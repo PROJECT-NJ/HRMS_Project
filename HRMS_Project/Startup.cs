@@ -58,6 +58,8 @@ namespace HRMS_Project
                     name: "default",
                     template: "{controller=Demo}/{action=Index}/{id?}");
             });
+
+        
         }
     }
 }

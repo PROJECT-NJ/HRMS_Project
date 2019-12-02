@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - HRMS_Project</title>
 
     <environment include="Development">
+
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -14,8 +15,16 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
     </environment>
 
+
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -33,7 +42,7 @@
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" asp-controller="Demo" asp-action="index"  >
+                <a class="nav-link" asp-controller="Demo" asp-action="index">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -53,8 +62,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="buttons"  >Buttons</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="cards"  >Cards</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="buttons">Buttons</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="cards">Cards</a>
                     </div>
                 </div>
             </li>
@@ -68,9 +77,9 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
                         <a class="collapse-item" asp-controller="Demo" asp-action="utilities_color">Colors</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="utilities_border" >Borders</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="utilities_animation" >Animations</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="other"  >Other</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="utilities_border">Borders</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="utilities_animation">Animations</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="utilities_other">Other</a>
                     </div>
                 </div>
             </li>
@@ -89,19 +98,19 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="login" >Login</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="register" >Register</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="forgot_password"  >Forgot Password</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="login">Login</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="register">Register</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="forgot_password">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="e404" >404 Page</a>
-                        <a class="collapse-item" asp-controller="Demo" asp-action="blank" >Blank Page</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="e404">404 Page</a>
+                        <a class="collapse-item" asp-controller="Demo" asp-action="blank">Blank Page</a>
                     </div>
                 </div>
             </li>
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" asp-controller="Demo" asp-action="charts" >
+                <a class="nav-link" asp-controller="Demo" asp-action="charts">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span>
                 </a>
@@ -130,37 +139,45 @@
         @RenderBody()
 
     </div>
-     <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" asp-controller="Demo" asp-action="login" >Logout</a>
-                    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" asp-controller="Demo" asp-action="login">Logout</a>
                 </div>
             </div>
         </div>
-    
+    </div>
+
     <hr />
     <footer>
         <p>&copy; 2019 - HRMS_Project</p>
     </footer>
 
 
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+ 
+
+
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
@@ -177,7 +194,10 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+
     </environment>
+
+
 
     @RenderSection("Scripts", required: false)
 </body>

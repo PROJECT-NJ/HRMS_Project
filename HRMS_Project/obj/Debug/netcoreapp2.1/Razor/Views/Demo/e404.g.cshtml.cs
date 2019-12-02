@@ -68,7 +68,7 @@ using HRMS_Project.Models;
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(81, 696, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96d64c68dc8e4e9d9b525f0817eac27c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "084d764f0d664b709e591d54c55ec392", async() => {
                 BeginContext(87, 683, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -100,7 +100,7 @@ using HRMS_Project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(779, 20861, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64ce319bfd4749e587fa61097c6c0f11", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "321649cd4a3e408a9731b172b360a067", async() => {
                 BeginContext(799, 6041, true);
                 WriteLiteral(@"
     <!-- Page Wrapper -->
@@ -225,7 +225,7 @@ using HRMS_Project.Models;
                     ");
                 EndContext();
                 BeginContext(6840, 681, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4dcd5d02312249e6bbbb0e058403fc96", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac3d4e590df24d648ed3e352b51152b2", async() => {
                     BeginContext(6941, 573, true);
                     WriteLiteral(@"
                         <div class=""input-group"">
@@ -267,7 +267,7 @@ using HRMS_Project.Models;
                                 ");
                 EndContext();
                 BeginContext(8281, 742, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0e391d2cdaf4d629a9b4fcc1b62f09a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b9fc1fbcc5141fdba5ab52a634573c9", async() => {
                     BeginContext(8335, 681, true);
                     WriteLiteral(@"
                                     <div class=""input-group"">

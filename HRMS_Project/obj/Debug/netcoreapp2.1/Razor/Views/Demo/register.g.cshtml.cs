@@ -67,7 +67,7 @@ using HRMS_Project.Models;
             WriteLiteral("\r\n<h2>register</h2>\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(104, 701, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc20ad9acc994f60ba5f3fce7481186f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea34ca6328cd4c09923eef83ee72f301", async() => {
                 BeginContext(110, 688, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -99,7 +99,7 @@ using HRMS_Project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(807, 3815, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fc9fe901d2e4cf6b72e8e9338f952ce", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ab284a249e9492fa8a1660d24b5d721", async() => {
                 BeginContext(841, 605, true);
                 WriteLiteral(@"
     <div class=""container"">
@@ -116,7 +116,7 @@ using HRMS_Project.Models;
                             ");
                 EndContext();
                 BeginContext(1446, 2248, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76bfe01981b3478a9801bd9512c31cdb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e255fa186d49490f9fcf7501a8743e2b", async() => {
                     BeginContext(1465, 2222, true);
                     WriteLiteral(@"
                                 <div class=""form-group row"">

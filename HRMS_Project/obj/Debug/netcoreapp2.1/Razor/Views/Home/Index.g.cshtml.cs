@@ -62,7 +62,7 @@ using HRMS_Project.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(82, 702, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10f72bbac1a24bb3a10158e402377cfa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f69dc573506b40cf94d4535f78a86aea", async() => {
                 BeginContext(88, 689, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -94,7 +94,7 @@ using HRMS_Project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(786, 1915, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c96e4dd36894073ba38ab2db0667e20", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d817c18fe1194639aba1205683488891", async() => {
                 BeginContext(852, 1842, true);
                 WriteLiteral(@"
     <!-- Page Wrapper -->
