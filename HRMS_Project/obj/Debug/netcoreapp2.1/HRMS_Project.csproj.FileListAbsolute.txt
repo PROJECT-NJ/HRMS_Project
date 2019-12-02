@@ -30,3 +30,17 @@ D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Proj
 D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Project.dll
 D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Project.pdb
 D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Project.csproj.CopyComplete
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\Index.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\e404.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\blank.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\buttons.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\cards.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\charts.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\forgot_password.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\login.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\register.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\tables.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\utilities_animation.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\utilities_border.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\utilities_color.g.cshtml.cs
+D:\Developer project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Demo\utilities_other.g.cshtml.cs
