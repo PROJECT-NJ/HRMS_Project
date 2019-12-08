@@ -9,7 +9,7 @@ namespace HRMS_Project.Controllers
     public class DemoController : Controller
     {
         public IActionResult Index()
-        {//test
+        {
             return View();
         }
 
@@ -74,6 +74,11 @@ namespace HRMS_Project.Controllers
         }
 
         public IActionResult buttons()
+        {
+            return View();
+        }
+
+        public IActionResult TEST()
         {
             return View();
         }
