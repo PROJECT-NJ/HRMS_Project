@@ -2,13 +2,64 @@
     ViewData["Title"] = "TEST";
     Layout = "";
 }
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dependencies/JQL.min.js"></script>
+    <script type="text/javascript" src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>
+
+    <link rel="stylesheet" href="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.css">
+    <script type="text/javascript" src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.css">
+    <script type="text/javascript" src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+</head>
+
 
 <h2>TEST</h2>
+
+<input type="text" id="amphoe">
+<input type="text" id="district">
+<input type="text" id="province">
+<input type="text" id="zipcode">
+
+-------------------------------------------------------------------
 
 <input type=file id=f>
 <button onclick="Create()">test</button>
 
 <script type="text/javascript">
+    $.Thailand({
+        $district: $('#district'), // input ของตำบล
+        $amphoe: $('#amphoe'), // input ของอำเภอ
+        $province: $('#province'), // input ของจังหวัด
+        $zipcode: $('#zipcode'), // input ของรหัสไปรษณีย์
+    });
+
+    $.Thailand.setup({
+        database: 'test/data.json'
+    });
+
+    // ไม่ต้องกำหนด path ของ database ซ้ำ
+    $.Thailand({
+        $search: $('#demo1 [name="search"]'),
+        onDataFill: function (data) {
+            console.log(data)
+        }
+    });
+
+    // ไม่ต้องกำหนด path ของ database ซ้ำเช่นกัน
+    $.Thailand({
+        $search: $('#demo2 [name="search"]'),
+        onDataFill: function (data) {
+            console.log(data)
+        }
+    });
+
+
 
     f.onchange = function () {
         var zip = new JSZip();
@@ -18,18 +69,23 @@
             .then(function (zip) {
                 alert("OK");
                 console.log(zip.files);
-                console.log(zip.files["Hello.txt"]._data);
-                console.log(zip.files["testText.txt"]._data);
-                console.log(zip.files["testXml.xlsx"]._data);
-                var stringDataTextHello = new TextDecoder("utf-8").decode(zip.files["Hello.txt"]._data.compressedContent);
-                var stringDataText = new TextDecoder("utf-8").decode(zip.files["testText.txt"]._data.compressedContent);
-                var stringDataXml = new TextDecoder("utf-8").decode(zip.files["testXml.xlsx"]._data.compressedContent);
-                console.log(stringDataTextHello);
-                console.log(stringDataText);
-                console.log(stringDataXml);
-                console.log(Utf8ArrayToStr(zip.files["Hello.txt"]._data.compressedContent));
-                console.log(Utf8ArrayToStr(zip.files["testText.txt"]._data.compressedContent));
-                console.log(Utf8ArrayToStr(zip.files["testXml.xlsx"]._data.compressedContent));
+                //console.log(zip.files["Hello.txt"]._data);
+                //console.log(zip.files["testText.txt"]._data);
+                //console.log(zip.files["testXml.xlsx"]._data);
+                //var stringDataTextHello = new TextDecoder("utf-8").decode(zip.files["Hello.txt"]._data.compressedContent);
+                //var stringDataText = new TextDecoder("utf-8").decode(zip.files["testText.txt"]._data.compressedContent);
+                //var stringDataXml = new TextDecoder("utf-8").decode(zip.files["testXml.xlsx"]._data.compressedContent);
+                //console.log(stringDataTextHello);
+                //console.log(stringDataText);
+                //console.log(stringDataXml);
+                //console.log(Utf8ArrayToStr(zip.files["Hello.txt"]._data.compressedContent));
+                //console.log(Utf8ArrayToStr(zip.files["testText.txt"]._data.compressedContent));
+                //console.log(Utf8ArrayToStr(zip.files["testXml.xlsx"]._data.compressedContent));
+                console.log(zip.files["address.csv"]._data);
+                var stringDataTextaddress = new TextDecoder("utf-8").decode(zip.files["address.csv"]._data.compressedContent);
+                console.log(stringDataTextaddress);
+                console.log(Utf8ArrayToStr(zip.files["address.csv"]._data.compressedContent));
+
 
             }, function () {
                 alert("Not a valid zip file")
@@ -43,15 +99,13 @@
 
     function Create() {
         var zip = new JSZip();
-           zip.file("testText.txt", "Hello best");
-        zip.file("Hello.txt", "Hello World\n");
-            zip.file("testXml.xlsx", "Hello World\n");
+        zip.file("address.csv", "สวัสดีเบส");
+
         //var img = zip.folder("images");
         //img.file("smile.gif", imgData, { base64: true });
         zip.generateAsync({ type: "blob" })
             .then(function (content) {
-                // see FileSaver.js
-                saveAs(content, "test.zip");
+                saveAs(content, "address.zip");
             });
     }
 
@@ -91,7 +145,7 @@
 </script>
 
 @*
-<script src="https://cdn.jsdelivr.net/npm/zip-loader@1.1.0/dist/ZipLoader.min.js"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/zip-loader@1.1.0/dist/ZipLoader.min.js"></script>*@
 
 <script type="text/javascript" src="~/js/JSzip/FileSaver.js"></script>
 
@@ -99,6 +153,12 @@
 <script src="~/js/JSzip/jszip.min.js"></script>
 <script src="~/js/JSzip/jszip-utils.js"></script>
 <script src="~/js/JSzip/jszip-utils.min.js"></script>
+
+
+
+
+
+
 
 
 
