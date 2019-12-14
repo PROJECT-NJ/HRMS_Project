@@ -138,3 +138,10 @@ D:\Developer project\HRMS_Project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp
 D:\Developer project\HRMS_Project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Project.dll
 D:\Developer project\HRMS_Project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Project.pdb
 D:\Developer project\HRMS_Project\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\HRMS_Project.csproj.CopyComplete
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.g.cshtml.cs
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Home.g.cshtml.cs
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Employee\TimeSheet.g.cshtml.cs
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Employee\OT.g.cshtml.cs
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Leave.g.cshtml.cs
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Employee\TimeVerification.g.cshtml.cs
+D:\project\test\HRMS_Project\HRMS_Project\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Employee_Layout.g.cshtml.cs
