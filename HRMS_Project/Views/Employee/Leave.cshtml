@@ -5,7 +5,6 @@
     Layout = "~/Views/Shared/Employee_Layout.cshtml";
 }
 
-<html lang="en">
 
 <body id="page-top" style="padding-top: 0px; padding-bottom: 0px;">
 
@@ -190,7 +189,7 @@
             <div class="container-fluid">
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">HOME</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Leave/Time Verification</h1>
                     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                 </div>
 
@@ -201,7 +200,7 @@
                         <div class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Profile</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Request Detail</h6>
                                 <div class="dropdown no-arrow">
                                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -217,52 +216,67 @@
                             </div>
                             <!-- Card Body -->
                             <div class="card-body">
-                                <table width="50%" class="col-xl-6 col-lg-6">
+                                <table width="100%" class="col-xl-6 col-lg-6">
                                     <tr>
-                                        <th>Name (th)</th>
-                                        <th>จารุวิทย์ อภิชัยชวลิต</th>
+                                        <th>Request Id :</th>
+                                        <th>Auto Generate</th>
 
                                     </tr>
                                     <tr>
-                                        <th>Name (en)</th>
-                                        <th>jaruwith aphichaichowalet</th>
+                                        <th>Request Date :</th>
+                                        <th> 12/11/2019 </th>
+
 
                                     </tr>
                                     <tr>
-                                        <th>Mobile No.</th>
-                                        <th>06-322-06060</th>
+                                        <th>Module :</th>
+                                        <th>
+
+                                            <select style="width: 50%;" class="form-control" id="sel1">
+                                                <option value="volvo">Leave</option>
+                                                <option value="saab">Time Verification</option>
+
+                                            </select>
+
+                                        </th>
+
                                     </tr>
-                                    <tr>
-                                        <th>Gender.</th>
-                                        <th>Male</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Birth Day</th>
-                                        <th>01/01/2020</th>
-                                    </tr>
+
+
                                 </table>
-                                <table width="50%" class="col-xl-6 col-lg-6">
+
+                                <table width="100%" class="col-xl-6 col-lg-6">
                                     <tr>
-                                        <th>E-mail</th>
-                                        <th>jaruwith@gmail.com</th>
+
+                                        <th>Start Date :</th>
+                                        <th>
+                                            <div class="input-append date form_datetime">
+                                                <input size="16" type="text" value="" readonly>
+                                                <span class="add-on"><i class="icon-th"></i></span>
+                                            </div>
+                                        </th>
+                                        <th>End Time :</th>
+                                        <th>
+                                            <div class="input-append date form_datetime">
+                                                <input size="16" type="text" value="" readonly>
+                                                <span class="add-on"><i class="icon-th"></i></span>
+                                            </div>
+                                        </th>
+
 
                                     </tr>
                                     <tr>
-                                        <th>Work Place</th>
-                                        <th>??????????</th>
-
+                                        <th>Reason :</th>
+                                        <th>
+                                            <div class="form-group">
+                                                <label for="comment">Comment:</label>
+                                                <textarea class="form-control" rows="2" id="comment"></textarea>
+                                            </div>
+                                        </th>
                                     </tr>
                                     <tr>
-                                        <th>Depertment</th>
-                                        <th>C#.net</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Manager</th>
-                                        <th>???????????</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Leader</th>
-                                        <th>???????????</th>
+                                        <th>Approver :</th>
+                                        <th> ???????????</th>
                                     </tr>
                                 </table>
                             </div>
@@ -273,7 +287,7 @@
                         <div class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Request Detail</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">How To Use</h6>
                                 <div class="dropdown no-arrow">
                                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -289,133 +303,16 @@
                             </div>
                             <!-- Card Body -->
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Request Id</th>
-                                                <th>Start Date</th>
-                                                <th>End Date</th>
-                                                <th>Reason</th>
-                                                <th>Stutus date</th>
-                                                <th>Edit/Delete</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Request Id</th>
-                                                <th>Start Date</th>
-                                                <th>End Date</th>
-                                                <th>Reason</th>
-                                                <th>Stutus date</th>
-                                                <th>Edit/Delete</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <th>RQ00001</th>
-                                                <th>01/01/2020</th>
-                                                <th>02/02/2020</th>
-                                                <th>sick</th>
-                                                <th>waiting</th>
-                                                <th>Click</th>
-                                            </tr>
-                                            <tr>
-                                                <th>RQ00001</th>
-                                                <th>01/01/2020</th>
-                                                <th>02/02/2020</th>
-                                                <th>sick</th>
-                                                <th>waiting</th>
-                                                <th>Click</th>
-                                            </tr>
-                                            <tr>
-                                                <th>RQ00001</th>
-                                                <th>01/01/2020</th>
-                                                <th>02/02/2020</th>
-                                                <th>sick</th>
-                                                <th>waiting</th>
-                                                <th>Click</th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                detail to use
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">Request Detail</h6>
-                                <div class="dropdown no-arrow">
-                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                        <div class="dropdown-header">Dropdown Header:</div>
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Request Id</th>
-                                                <th>Start Date</th>
-                                                <th>End Date</th>
-                                                <th>Reason</th>
-                                                <th>Stutus date</th>
-                                                <th>Edit/Delete</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Request Id</th>
-                                                <th>Start Date</th>
-                                                <th>End Date</th>
-                                                <th>Reason</th>
-                                                <th>Stutus date</th>
-                                                <th>Edit/Delete</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <th>RQ00001</th>
-                                                <th>01/01/2020</th>
-                                                <th>02/02/2020</th>
-                                                <th>sick</th>
-                                                <th>waiting</th>
-                                                <th>Click</th>
-                                            </tr>
-                                            <tr>
-                                                <th>RQ00001</th>
-                                                <th>01/01/2020</th>
-                                                <th>02/02/2020</th>
-                                                <th>sick</th>
-                                                <th>waiting</th>
-                                                <th>Click</th>
-                                            </tr>
-                                            <tr>
-                                                <th>RQ00001</th>
-                                                <th>01/01/2020</th>
-                                                <th>02/02/2020</th>
-                                                <th>sick</th>
-                                                <th>waiting</th>
-                                                <th>Click</th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#" class="btn btn-success btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-check"></i>
+                        </span>
+                        <span class="text">  Success</span>
+                    </a>
                 </div>
 
             </div>
@@ -434,8 +331,14 @@
     </div>
     <!-- End of Content Wrapper -->
 
-
 </body>
 
 
-</html>
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+</script>
