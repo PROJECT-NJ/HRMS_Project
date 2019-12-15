@@ -12534,11 +12534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\590191\\Documents\\HRMS_Project\\HRMS_Project\\HRMS_Project\\HRMS_Project.csproj",
+      "projectUniqueName": "C:\\Users\\590191\\Documents\\HRMS_Project\\HRMS_Project\\HRMS_Project.csproj",
       "projectName": "HRMS_Project",
-      "projectPath": "C:\\Users\\590191\\Documents\\HRMS_Project\\HRMS_Project\\HRMS_Project\\HRMS_Project.csproj",
+      "projectPath": "C:\\Users\\590191\\Documents\\HRMS_Project\\HRMS_Project\\HRMS_Project.csproj",
       "packagesPath": "C:\\Users\\590191\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\590191\\Documents\\HRMS_Project\\HRMS_Project\\HRMS_Project\\obj\\",
+      "outputPath": "C:\\Users\\590191\\Documents\\HRMS_Project\\HRMS_Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HRMS_Project.Controllers
 {
-    //5565
     public class DemoController : Controller
     {
         public IActionResult Index()
