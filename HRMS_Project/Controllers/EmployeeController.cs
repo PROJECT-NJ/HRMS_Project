@@ -10,7 +10,7 @@ namespace HRMS_Project.Controllers
     {
         public IActionResult Home()
         {
-            return View("Home2");
+            return View("Home");
         }
 
         public IActionResult Leave()
