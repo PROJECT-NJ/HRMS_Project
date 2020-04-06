@@ -7,6 +7,7 @@ using HRMS_Project.Models.Login;
 using HRMS_Project.Models.Settings;
 using Microsoft.Extensions.Options;
 using HRMS_Project.Function.WebApi;
+using HRMS_Project.Models.MenuItem;
 
 namespace HRMS_Project.Controllers
 {
@@ -62,11 +63,13 @@ namespace HRMS_Project.Controllers
          //   return Json(new { success = false, message = ex });
         }
 
-        public ActionResult ProcessLogin2([FromBody]Dataforlogin data)
+        public ActionResult _Layout()
         {
-           
+            List<MenuItemViewModel> miVM = new List<MenuItemViewModel>();
 
-            return Json(new { success = false});
+            miVM.Add(new MenuItemViewModel { Link = "test1", LinkName = "test2" });
+
+            return PartialView("SideMenu", miVM);
         }
 
 
