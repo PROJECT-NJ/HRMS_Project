@@ -66,8 +66,8 @@ namespace HRMS_Project
                     name: "default",
                   // template: "{controller=Demo}/{action=Index}/{id?}");
                   //  template: "{controller=Demo}/{action=TEST}/{id?}");
-                 template: "{controller=Login}/{action=Login}/{id?}");     
-                  // template: "{controller=Employee}/{action=Home}/{id?}");
+                 // template: "{controller=Login}/{action=Login}/{id?}");     
+                  template: "{controller=Employee}/{action=Home}/{id?}");
             });
 
         
