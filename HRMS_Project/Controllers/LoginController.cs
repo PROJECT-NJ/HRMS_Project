@@ -7,6 +7,7 @@ using HRMS_Project.Models.Login;
 using HRMS_Project.Models.Settings;
 using Microsoft.Extensions.Options;
 using HRMS_Project.Function.WebApi;
+using HRMS_Project.Models.MenuItem;
 
 namespace HRMS_Project.Controllers
 {
@@ -31,9 +32,10 @@ namespace HRMS_Project.Controllers
 
 
         public IActionResult ProcessLogin([FromBody]Dataforlogin data)
-        {          
+        {
             string message = "";
-            try {
+            try
+            {
 
                 string DataPost = Newtonsoft.Json.JsonConvert.SerializeObject(data);
 
@@ -42,7 +44,7 @@ namespace HRMS_Project.Controllers
 
                 if (bool.Parse(webapi.PostWebApi(_appSettings.ServerWebApi, DataPost)))
                 {
-                  
+
                     message = "success";
                 }
                 else
@@ -56,19 +58,10 @@ namespace HRMS_Project.Controllers
             {
                 message = ex.Message;
 
-            }       
+            }
 
             return Json(message);
-         //   return Json(new { success = false, message = ex });
+            //   return Json(new { success = false, message = ex });
         }
-
-        public ActionResult ProcessLogin2([FromBody]Dataforlogin data)
-        {
-           
-
-            return Json(new { success = false});
-        }
-
-
-        }
+    }
 }

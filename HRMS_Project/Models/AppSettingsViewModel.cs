@@ -8,6 +8,5 @@ namespace HRMS_Project.Models.Settings
     public class AppSettingsViewModel
     {
         public string ServerWebApi { get; set; }
-        public string test { get; set; }
     }
 }
