@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -66,63 +68,14 @@
 </head>
 
 <body>
-
+      
     <div id="wrapper">
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" asp-controller="Demo" asp-action="index">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Jaruwith <sup>2</sup></div>
-            </a>
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            <!-- Sidebar - Brand -->                                 
 
-            <div class="sidebar-heading">
-                Home
-            </div>
-            <li class="nav-item active">
-                <a class="nav-link" asp-controller="Employee" asp-action="Home">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Request
-            </div>
+            @await Component.InvokeAsync("Menu")
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Request</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" asp-controller="Employee" asp-action="OT">OT</a>
-                        <a class="collapse-item" asp-controller="Employee" asp-action="Leave">Leave/Time Verification</a>
-                    </div>
-                </div>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Time Verification
-            </div>
-
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="Employee" asp-action="TimeSheet">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Time Verification</span>
-                </a>
-            </li>
-            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -130,8 +83,6 @@
             </div>
         </ul>
         <!-- End of Sidebar -->
-
-
 
         <partial name="_CookieConsentPartial" />
 

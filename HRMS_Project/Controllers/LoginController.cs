@@ -32,9 +32,10 @@ namespace HRMS_Project.Controllers
 
 
         public IActionResult ProcessLogin([FromBody]Dataforlogin data)
-        {          
+        {
             string message = "";
-            try {
+            try
+            {
 
                 string DataPost = Newtonsoft.Json.JsonConvert.SerializeObject(data);
 
@@ -43,7 +44,7 @@ namespace HRMS_Project.Controllers
 
                 if (bool.Parse(webapi.PostWebApi(_appSettings.ServerWebApi, DataPost)))
                 {
-                  
+
                     message = "success";
                 }
                 else
@@ -57,21 +58,10 @@ namespace HRMS_Project.Controllers
             {
                 message = ex.Message;
 
-            }       
+            }
 
             return Json(message);
-         //   return Json(new { success = false, message = ex });
+            //   return Json(new { success = false, message = ex });
         }
-
-        public ActionResult _Layout()
-        {
-            List<MenuItemViewModel> miVM = new List<MenuItemViewModel>();
-
-            miVM.Add(new MenuItemViewModel { Link = "test1", LinkName = "test2" });
-
-            return PartialView("SideMenu", miVM);
-        }
-
-
-        }
+    }
 }
