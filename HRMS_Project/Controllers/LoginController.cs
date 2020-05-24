@@ -8,6 +8,11 @@ using HRMS_Project.Models.Settings;
 using Microsoft.Extensions.Options;
 using HRMS_Project.Function.WebApi;
 using HRMS_Project.Models.MenuItem;
+using Microsoft.Extensions.Caching.Memory;
+using HRMS_Project.Function;
+using System.Reflection;
+using System.Collections;
+using HRMS_Project.Models.Cache;
 
 namespace HRMS_Project.Controllers
 {
@@ -15,10 +20,11 @@ namespace HRMS_Project.Controllers
     public class LoginController : Controller
     {
         private readonly AppSettingsViewModel _appSettings;
-
-        public LoginController(IOptions<AppSettingsViewModel> appSettings)
+        private readonly IMemoryCache _cache;
+        public LoginController(IOptions<AppSettingsViewModel> appSettings, IMemoryCache cache)
         {
             _appSettings = appSettings.Value;
+            _cache = cache;
         }
         public IActionResult Index()
         {
@@ -36,6 +42,19 @@ namespace HRMS_Project.Controllers
             string message = "";
             try
             {
+                Cache.CreateCache(_appSettings,  _cache,  "test", "test_user");
+
+                var collection = typeof(MemoryCache).GetProperty("EntriesCollection", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(_cache) as ICollection;
+                foreach (var item in collection)
+                {
+
+                        string test =  item.GetType().GetProperty("Key").GetValue(item).ToString();
+
+                }
+
+                    var dataInCache = _cache.Get<List<CacheModel>>("test");
+
+                _cache.Remove("test");
 
                 string DataPost = Newtonsoft.Json.JsonConvert.SerializeObject(data);
 
