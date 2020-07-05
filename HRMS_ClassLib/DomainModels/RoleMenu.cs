@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace HRMS_WebApi.Models
+namespace HRMS_ClassLib.DomainModels
 {
     public class RoleMenu
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using HRMS_WebApi.Models;
+using HRMS_ClassLib.DomainModels;
 
 namespace HRMS_WebApi.Data
 {
@@ -12,14 +12,12 @@ namespace HRMS_WebApi.Data
         public DbSet<Menu> Menu { get; set; }
         public DbSet<Role> Role { get; set; }
         public DbSet<RoleMenu> RoleMenu { get; set; }
-        public DbSet<Site> Site { get; set; }
 
         public HrmsContext(DbContextOptions<HrmsContext> options) 
             : base(options)  {   }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //em => Entity Menu
             modelBuilder.Entity<Menu>(em =>
             {
                 em.HasKey(param => param.MenuID);
@@ -27,7 +25,8 @@ namespace HRMS_WebApi.Data
                 em.Property(param => param.MenuGroup).HasColumnType("varchar(2)");
                 em.Property(param => param.MenuNameEng).HasColumnType("varchar(100)");
                 em.Property(param => param.MenuNameTh).HasColumnType("varchar(100)");
-                em.Property(param => param.ControllerID).HasColumnType("varchar(200)");
+                em.Property(param => param.Controller).HasColumnType("varchar(200)");
+                em.Property(param => param.Action).HasColumnType("varchar(200)");
                 em.Property(param => param.CreateBy).HasColumnType("varchar(50)");
                 em.Property(param => param.CreateDate).HasColumnType("datetime")
                     .HasDefaultValueSql<DateTime>("SYSDATETIME()");
@@ -36,7 +35,6 @@ namespace HRMS_WebApi.Data
                     .HasDefaultValueSql<DateTime>("SYSDATETIME()");
             });
 
-            //er => Entity Role
             modelBuilder.Entity<Role>(er =>
             {
                 er.HasKey(param => param.RoleId);
@@ -50,7 +48,6 @@ namespace HRMS_WebApi.Data
                     .HasDefaultValueSql<DateTime>("SYSDATETIME()");
             });
 
-            //erm => Entity RoleMenu
             modelBuilder.Entity<RoleMenu>(erm =>
             {
                 erm.HasKey(param => new { param.RoleId, param.MenuId });
@@ -66,20 +63,6 @@ namespace HRMS_WebApi.Data
                 erm.Property(param => param.UpdateBy).HasColumnType("varchar(50)");
                 erm.Property(param => param.UpdateDate).HasColumnType("datetime")
                     .HasDefaultValueSql<DateTime>("SYSDATETIME()");
-            });
-
-            //es => Entity Site
-            modelBuilder.Entity<Site>(es =>
-            {
-                es.Property(param => param.SiteId).HasColumnType("varchar(3)");
-                es.Property(param => param.SiteName).HasColumnType("varchar(200)");
-                es.Property(param => param.BillDay).HasColumnType("tinyint");
-                es.Property(param => param.CustomerCode).HasColumnType("varchar(200)");
-                es.Property(param => param.WelcomeMessage).HasColumnType("varchar(1000)");
-                es.Property(param => param.WarningMessage).HasColumnType("varchar(500)");
-                es.Property(param => param.WarningTimes).HasColumnType("varchar(30)");
-                es.Property(param => param.ExtendTime).HasColumnType("tinyint");
-                es.Property(param => param.LoginLockTimes).HasColumnType("tinyint");
             });
         }
     }

@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMS_Project", "HRMS_Project\HRMS_Project.csproj", "{51737329-C2E2-4C66-B558-992E760096D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS_WebApi", "HRMS_WebApi\HRMS_WebApi.csproj", "{D06B263B-4767-490D-B8F0-00B3295DF072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMS_WebApi", "HRMS_WebApi\HRMS_WebApi.csproj", "{D06B263B-4767-490D-B8F0-00B3295DF072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS_ClassLib", "HRMS_ClassLib\HRMS_ClassLib.csproj", "{06D86107-CD6C-48E4-8CAC-6D5B63B588AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS_AuthServ", "HRMS_AuthServ\HRMS_AuthServ.csproj", "{4E408675-E3EA-4165-A2DE-D2B0CF5DB494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D06B263B-4767-490D-B8F0-00B3295DF072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D06B263B-4767-490D-B8F0-00B3295DF072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D06B263B-4767-490D-B8F0-00B3295DF072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D86107-CD6C-48E4-8CAC-6D5B63B588AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D86107-CD6C-48E4-8CAC-6D5B63B588AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D86107-CD6C-48E4-8CAC-6D5B63B588AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D86107-CD6C-48E4-8CAC-6D5B63B588AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E408675-E3EA-4165-A2DE-D2B0CF5DB494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E408675-E3EA-4165-A2DE-D2B0CF5DB494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E408675-E3EA-4165-A2DE-D2B0CF5DB494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E408675-E3EA-4165-A2DE-D2B0CF5DB494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
