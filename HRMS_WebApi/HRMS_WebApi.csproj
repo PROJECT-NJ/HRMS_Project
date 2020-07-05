@@ -22,4 +22,8 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HRMS_ClassLib\HRMS_ClassLib.csproj" />
+  </ItemGroup>
+
 </Project>
